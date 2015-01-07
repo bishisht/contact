@@ -1,2 +1,11 @@
-<h1>Entries#index</h1>
-<p>Find me in app/views/entries/index.html.erb</p>
+<h1>Listing Entries</h1>
+
+<div class="list-group">
+	<% @entries.each do |entry| %>
+		<div class="list-group-item">
+			<%= entry.fullName %> <br />
+			<%= entry.mobile %> 
+			<%= link_to 'Delete', @entry, confirm: 'Are you sure?', :method=> 'delete' %>
+		</div>
+	<% end %>
+</div>

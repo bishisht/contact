@@ -1,23 +1,5 @@
 Rails.application.routes.draw do
-  get 'entries/index'
-
-  get 'entries/show'
-
-  get 'entries/new'
-
-  get 'entries/edit'
-
-  get 'entries/delete'
-
-  get 'contacts/new'
-
-  get 'contacts/index'
-
-  get 'contacts/show'
-
-  get 'contacts/edit'
-
-  get 'contacts/delete'
+  resources :entries
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -73,4 +55,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  root :to => 'entries#index'
 end

@@ -1,0 +1,12 @@
+<%= bootstrap_form_for(@entry) do |f| %>
+	<div class="fullName">
+		<%= f.text_field :fullName %>
+	</div>
+	<div class="mobile">
+		<%= f.text_field :mobile %>
+	</div>
+
+	<div class="submit">
+		<%= f.submit %>
+	</div>
+<% end %>

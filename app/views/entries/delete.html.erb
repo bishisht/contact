@@ -1,2 +1,4 @@
-<h1>Entries#delete</h1>
-<p>Find me in app/views/entries/delete.html.erb</p>
+<h1>Delete</h1>
+<strong><%= @entry.fullName %></strong>
+<strong><%= @entry.mobile %></strong>
+<%= link_to 'Delete', entries_delete_path(:id => @entry.id) %>

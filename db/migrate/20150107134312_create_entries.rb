@@ -3,7 +3,7 @@ class CreateEntries < ActiveRecord::Migration
     create_table :entries do |t|
       t.string :fullName
       t.string :mobile
-      t.url :photo_url
+      t.string :photo_url
 
       t.timestamps null: false
     end
