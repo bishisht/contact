@@ -1,11 +1,11 @@
-class ContactsController < ApplicationController
-  def new
-  end
-
+class EntriesController < ApplicationController
   def index
   end
 
   def show
+  end
+
+  def new
   end
 
   def edit
